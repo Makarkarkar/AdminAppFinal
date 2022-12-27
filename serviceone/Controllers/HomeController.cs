@@ -11,7 +11,7 @@ public class HomeController : ControllerBase
     public HomeController()
     {
         _client = new HttpClient();
-        _client.BaseAddress = new Uri(Environment.GetEnvironmentVariable("WeatherService")!);
+        _client.BaseAddress = new Uri(Environment.GetEnvironmentVariable("ServiceTwoAddres")!);
         _client.DefaultRequestHeaders.Accept.Add(
             new MediaTypeWithQualityHeaderValue("application/json"));
     }
