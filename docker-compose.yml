@@ -18,7 +18,7 @@ services:
     networks:
       - services-network
     environment:
-      - ServiceTwoAddres=http://servicetwo:80/
+      - ServiceTwoAddress=http://servicetwo:80/
   servicetwo:
     container_name: servicetwo
     image: servicetwo:latest
